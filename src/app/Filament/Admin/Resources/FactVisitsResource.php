@@ -54,6 +54,9 @@ class FactVisitsResource extends Resource
                 Tables\Columns\TextColumn::make('date_id')
                     ->numeric()
                     ->sortable(),
+                Tables\Columns\TextColumn::make('date.date')
+                    ->date()
+                    ->sortable(),
                 Tables\Columns\TextColumn::make('date.day_name')
                     ->sortable(),
                 Tables\Columns\TextColumn::make('comic_id')
